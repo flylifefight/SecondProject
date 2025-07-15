@@ -1,0 +1,6 @@
+project/.vscode/*
+project/Listings/*
+project/Objects/*
+project/Out/*
+project/*.uvguix.*
+project/EventRecorderStub.scvd
