@@ -4,6 +4,8 @@
 #include "bsp_timer.h"
 #include "bsp_usart.h"
 #include "bsp_rcc.h"
+#include "bsp_misc.h"
+#include "mid_vi4302.h"
 
 
 /*!
@@ -17,14 +19,14 @@ int main(void)
     /* system clocks configuration */
     rcc_config();
     /* NVIC configuration */
-    //nvic_config();
+    misc_config();
     /* systick configuration */
     systick_config(); 
     
     adc_config();
     usart0_config();
     timer2_config();
- 
+    vi4302_all_init();
     while(1){
     }
 }

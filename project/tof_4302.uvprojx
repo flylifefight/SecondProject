@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\src;..\bsp;..\library\n32g430_std_periph_driver\inc;..\library\CMSIS\core;..\library\CMSIS\device</IncludePath>
+              <IncludePath>..\src;..\bsp;..\library\n32g430_std_periph_driver\inc;..\library\CMSIS\core;..\library\CMSIS\device;..\VI4302 API\inc;..\middle</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -494,6 +494,61 @@
               <FileName>bsp_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bsp\bsp_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\bsp_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\bsp_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\bsp_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\bsp_flash.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>middle</GroupName>
+          <Files>
+            <File>
+              <FileName>mid_vi4302.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\middle\mid_vi4302.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>VI4302 API</GroupName>
+          <Files>
+            <File>
+              <FileName>User_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VI4302 API\src\User_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>VI4302_Config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VI4302 API\src\VI4302_Config.c</FilePath>
+            </File>
+            <File>
+              <FileName>VI4302_System.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VI4302 API\src\VI4302_System.c</FilePath>
+            </File>
+            <File>
+              <FileName>fw_44_00_00_00_r01.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VI4302 API\src\fw_44_00_00_00_r01.c</FilePath>
             </File>
           </Files>
         </Group>

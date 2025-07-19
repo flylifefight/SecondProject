@@ -30,7 +30,7 @@ void timer2_config(void)
 	TIM_TimeBaseInitType TIM_TimeBaseStructure;
     TIM_Base_Struct_Initialize(&TIM_TimeBaseStructure);
     TIM_TimeBaseStructure.Period    = (1000000/INIT_TIM2_FREQUENCY)-1;
-    TIM_TimeBaseStructure.Prescaler = (SystemClockFrequency/1000000)-1;
+    TIM_TimeBaseStructure.Prescaler = (SystemClockFrequency/2/1000000)-1;
     TIM_TimeBaseStructure.ClkDiv    = 0;
     TIM_TimeBaseStructure.CntMode   = TIM_CNT_MODE_UP;
     TIM_Base_Initialize(TIM2, &TIM_TimeBaseStructure);   
